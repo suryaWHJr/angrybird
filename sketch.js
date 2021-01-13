@@ -15,7 +15,7 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
-
+platform = new Ground(150,300,300,170)
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
 
@@ -49,7 +49,7 @@ function draw(){
     ground.display();
     viking1.display();
     log1.display();
-
+    platform.display();
     box3.display();
     box4.display();
     viking3.display();
